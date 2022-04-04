@@ -1,0 +1,91 @@
+.headerdiv {
+    background: linear-gradient(45deg, transparent, rgb(226, 226, 226));
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 10vh;
+
+}
+
+.socialmediahandles {
+    height: 70%;
+    align-self: center;
+    margin: 0;
+    height: auto;
+    width: 8vw;
+    
+}
+
+.quotedivall {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    outline: none;
+    text-decoration: none;
+}
+.quotedivbody{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 191, 191);
+}
+.quotetext {
+    color: rgb(82, 74, 220);
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:text 10s infinite alternate;
+    border-right:3px solid rgb(104, 84, 219);
+    font-size: 2em;
+        /* position: relative;
+   font-size: 2em;
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+   -webkit-box-reflect: below 1px linear-gradient(transparent,grey);
+   line-height: 0.70em;
+   outline:none;
+   animation: animate 5% linear infinite ; */
+
+}
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: rgb(0, 0, 0);
+  }
+  .container {
+    margin-top: 1%;
+  }
+
+  @keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px rgb(104, 84, 219),
+        0 0 80px rgb(104, 84, 219),
+        0 0 90px rgb(104, 84, 219),
+        0 0 100px rgb(104, 84, 219),
+        0 0 150px rgb(104, 84, 219);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+
+@keyframes text{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:29ch;
+    }
+}
